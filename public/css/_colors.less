@@ -1,0 +1,50 @@
+@import "_variables";
+@import "_lesshat";
+
+.custom-color(@color) {
+  a {
+    color: @color;
+  }
+
+  ::-moz-selection {
+    background-color: lighten(@color, 30%);
+  }
+
+  ::selection {
+    background-color: lighten(@color, 30%);
+  }
+
+  #header .img, #header h1 {
+    background-color: @color;
+  }
+
+  .section .header h2 {color: darken(@color, 10%)}
+
+  #footer a {
+    color: lighten(@color, 40%);
+  }
+
+  @media only screen and (min-width: @large-limit) {
+    #nav a {
+      &:hover, &:active, &:focus, &.active {
+        //background-color: fade(@color, 10%);
+        background-color: darken(@color, 20%);
+      }
+    }
+
+    .section {
+      .header .action {
+        &:hover, &:focus {
+          background-color: @color;
+        }
+      }
+    }
+  }
+
+
+}
+.red{ .custom-color(@red); }
+.green{ .custom-color(@green); }
+.blue{ .custom-color(@blue); }
+.purple{ .custom-color(@purple); }
+.orange { .custom-color(@orange) }

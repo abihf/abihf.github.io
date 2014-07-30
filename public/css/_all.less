@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import "_lesshat";
+
+#header {
+  text-align: center;
+
+  h1 {
+    margin: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    color:  #FFFFFF;
+    .box-shadow(0 0 15px rgba(0, 0, 0, .5));
+  }
+
+  .img {
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    .size(248px);
+    .box-shadow(0 0 15px rgba(0, 0, 0, .5));
+    .transition(background-color 1s);
+
+    span {
+      background: url(../img/frog-circle.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      bottom: -1px;
+      right: -1px;
+
+    }
+  }
+
+  .img, h1 {
+    .transition(background-color 1s);
+  }
+
+}
+
+.section {
+  .header {
+    background-color: #eeeeee;
+    h2 {
+      .transition(color 1s);
+    }
+  }
+  .content {
+    text-align: justify;
+
+
+    img {
+      //width: 100%;
+      max-width: 80%;
+      height: auto;
+      padding: 3px;
+      .box-shadow(0 0 2px rgba(0, 0, 0, .5));
+    }
+
+    img[align=left] {
+      float: left;
+      margin: 0 .5em .5em 0;
+    }
+
+    img[align=right] {
+      float: right;
+      margin: 0 0 .5em .5em;
+    }
+  }
+}
+
+#footer {
+  font-size: 8pt;
+  text-align: center;
+  color: #eee;
+  p {margin: 0}
+
+}

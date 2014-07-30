@@ -1,0 +1,41 @@
+[loader_css]
+base=css/
+out=loader.css
+watch=loader.less
+cmd="lessc --clean-css loader.less loader.css"
+
+[main_css]
+base=css/
+out=main.css
+watch="main.less _variables.less _helper.less _all.less _large.less _small.less"
+cmd="lessc -x -O2 --source-map main.less main.css"
+
+[loader_js]
+base=js/
+out=load.min.js
+watch=load.coffee
+cmd="coffeebar -mbo load.min.js load.coffee"
+
+[main_js]
+base=js/
+out=main.js
+watch=main.coffee
+cmd="coffee -cbm main.coffee"
+
+[all_js]
+base=js/
+out=all.min.js
+watch="main.js jeesh.js"
+cmd="uglifyjs jeesh.js main.js -m -c -o all.min.js --in-source-map=main.map --source-map=all.min.map"
+
+[index_html]
+base=""
+out="index.html"
+watch="index.jade _partial/siapa-abi.jade _partial/keahlian.jade _partial/produk.jade _partial/hubungi.jade js/load.min.js css/loader.css"
+cmd="jade index.jade"
+
+[id_index_html]
+base=""
+out="id/index.html"
+watch="index.html"
+cmd="cp index.html id/index.html"
