@@ -11,8 +11,8 @@
       elm.href = file
     head.appendChild elm
 )(document, [
-  'css/main.css',
-  'js/all.min.js',
+  '/css/main.css',
+  '/js/all.min.js',
   '//www.google-analytics.com/analytics.js'
 ])
 
