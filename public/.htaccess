@@ -214,10 +214,6 @@ AddDefaultCharset utf-8
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
 
-    #RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^/ ~cache/id.html
-    RewriteRule ^(id|en) ~cache/$1.html
-
   # RewriteBase /
 </IfModule>
 
