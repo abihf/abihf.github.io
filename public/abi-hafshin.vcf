@@ -1,0 +1,23 @@
+BEGIN:VCARD
+VERSION=4.0
+KIND:individual
+SOURCE:http://hafs.in/abi-hafshin.vcf
+FN:Abi Hafshin Alfarouq
+N:Hafshin;Abi;;;
+NICKNAME:Abi
+PHOTO:http://hafs.in/img/photo-abi.jpg
+BDAY:19921007
+GENDER:M;Male
+ADR;TYPE=home:;;;Pandeglang;Banten;42217;Indonesia
+EMAIL:abi@hafs.in
+TEL;VALUE=uri;TYPE="text,voice,cell":tel:+62-896-86375131
+URL:http://hafs.in/
+LANG;TYPE=work;PREF=1:en
+LANG;TYPE=work;PREF=2:id
+LANG;TYPE=home:id
+TZ:Asia/Jakarta
+TITLE=Software Developer
+CATEGORY:INFORMATION TECHNOLOGY,SOFTWARE,WEB,DEVELOPER,INTERNET,NETWORK,LINUX
+KEY;MEDIATYPE=application/pgp-keys:http://hafs.in/abi.asc
+REV:20140801200000Z
+END:VCARD
