@@ -1,7 +1,7 @@
 #!/bin/bash
 
 curdir=$(cd `dirname "$0"`; pwd)
-conf_file="${curdir}/public/.watch"
+conf_file="${curdir}/.watch"
 
 export PATH=${curdir}/node_modules/.bin:$PATH
 
@@ -67,4 +67,4 @@ filemtime() {
     fi
 }
 
-main
+main $@
