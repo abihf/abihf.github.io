@@ -1,3 +1,14 @@
+# setup google analystic
+((win, g, arg) ->
+  win['GoogleAnalyticsObject'] = g
+  win[g] = {q: arg, l: 1*new Date}
+)(window, 'ga', [['create','UA-53043721-1','auto'], ['send','pageview']])
+
+# setup google web font 
+WebFontConfig = {
+  google: ['Open+Sans:400,400italic,700,700italic:latin']
+}
+
 ((document, files) ->
   head = document.getElementsByTagName('head')[0]
   for file in files
@@ -14,9 +25,6 @@
   '/css/main.css',
   '/js/all.min.js',
   '//www.google-analytics.com/analytics.js'
+  '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js'
 ])
 
-((win, g, arg) ->
-  win['GoogleAnalyticsObject'] = g
-  win[g] = {q: arg, l: 1*new Date}
-)(window, 'ga', [['create','UA-53043721-1','auto'], ['send','pageview']])
