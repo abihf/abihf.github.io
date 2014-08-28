@@ -26,6 +26,7 @@ WebFontConfig = {
   '/css/main.css',
   '/js/all.min.js',
   '//www.google-analytics.com/analytics.js'
-  '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js'
+#  '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js'
+  'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic&subset=latin'
 ])
 
