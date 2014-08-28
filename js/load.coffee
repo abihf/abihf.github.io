@@ -6,7 +6,8 @@
 
 # setup google web font 
 WebFontConfig = {
-  google: ['Open+Sans:400,400italic,700,700italic:latin']
+  google: 
+    families: ['Open+Sans:400,400italic,700,700italic:latin']
 }
 
 ((document, files) ->
