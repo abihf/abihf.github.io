@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      var params = window.location.search.substr(1).split('&')
+        .reduce((prev, current) => {
+          var pair = current.split('=');
+          prev[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+          return prev;
+        }, {});
+      window.postMessage({ type: 'TRAKT_TV_AUTH_CODE', code: params.code, state: params.state });
+    </script>
+  </body>
+</html>
