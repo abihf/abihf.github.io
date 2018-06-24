@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <script>
-      var params = window.location.search.substr(1).split('&')
-        .reduce((prev, current) => {
-          var pair = current.split('=');
-          prev[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-          return prev;
-        }, {});
-      window.postMessage({ type: 'TRAKT_TV_AUTH_CODE', code: params.code, state: params.state }, "*");
-    </script>
-  </body>
+<head></head>
+<body>
+  Redirecting...
+  <script>
+    var params = window.location.search.substr(1).split('&')
+      .reduce((prev, current) => {
+        var pair = current.split('=');
+        prev[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+        return prev;
+      }, {});
+    var message = JSON.stringify({ type: 'TRAKT_TV_AUTH_CODE', code: params.code, state: params.state })
+    document.addEventListener(
+      'DOMContentLoaded',
+      () => setTimeout(() => window.postMessage(message, "*"), 1000),
+      false
+    );
+  </script>
+</body>
 </html>
