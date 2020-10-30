@@ -4,4 +4,4 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Feature-Policy: geolocation 'none'; notifications 'none'; microphone 'none'; camera 'none'; fullscreen 'none'; payment 'none'; sync-xhr 'none'
-  Content-Security-Policy: default-src 'none'; style-src 'sha256-FCaVqTf5pw8Yx/7DaKLTo386xw8AroJZXhMrhNueQm0='; img-src 'self'; manifest-src 'self'
+  Content-Security-Policy: default-src 'none'; style-src 'sha256-Ob3nz/aO0NtfNM32xeXdmRnYmPkgOZiwez0cbxzJnEc='; img-src 'self'; manifest-src 'self'
