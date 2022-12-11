@@ -1,3 +1,4 @@
 /.well-known/webfinger resource=:resource https://fed.hafs.in/.well-known/webfinger?resource=:resource
 /.well-known/nodeinfo https://fed.hafs.in/.well-known/nodeinfo
 /@abi https://fed.hafs.in/@abi
+/users/abi https://fed.hafs.in/users/abi
